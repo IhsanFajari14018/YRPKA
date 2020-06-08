@@ -16,14 +16,14 @@
   <link rel="apple-touch-icon" href="apple-icon.png">
   <link rel="shortcut icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="{{ asset('/coreui/src/vendors/bootstrap/dist/css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('/coreui/src/vendors/font-awesome/css/font-awesome.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('/coreui/src/vendors/themify-icons/css/themify-icons.css') }}">
-  <link rel="stylesheet" href="{{ asset('/coreui/src/vendors/flag-icon-css/css/flag-icon.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('/coreui/src/vendors/selectFX/css/cs-skin-elastic.css') }}">
-  <link rel="stylesheet" href="{{ asset('/coreui/src/vendors/jqvmap/dist/jqvmap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/vendors/bootstrap/dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/vendors/font-awesome/css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/vendors/themify-icons/css/themify-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/vendors/flag-icon-css/css/flag-icon.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/vendors/selectFX/css/cs-skin-elastic.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/vendors/jqvmap/dist/jqvmap.min.css') }}">
 
-  <link rel="stylesheet" href="{{ asset('/coreui/src/assets/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('/sufee/assets/css/style.css') }}">
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -41,8 +41,8 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
-        <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+        <a class="navbar-brand" href="./"><img src="{{ asset('/sufee/images/logo.png') }}" alt="Logo"></a>
+        <a class="navbar-brand hidden" href="./"><img src="{{ asset('/sufee/images/logo2.png') }}" alt="Logo"></a>
       </div>
 
       <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -176,7 +176,7 @@
               <div class="dropdown-menu" aria-labelledby="message">
                 <p class="red">You have 4 Mails</p>
                 <a class="dropdown-item media bg-flat-color-1" href="#">
-                  <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                  <span class="photo media-left"><img alt="avatar" src="{{ asset('/sufee/images/avatar/1.jpg') }}"></span>
                   <span class="message media-body">
                     <span class="name float-left">Jonathan Smith</span>
                     <span class="time float-right">Just now</span>
@@ -184,7 +184,7 @@
                   </span>
                 </a>
                 <a class="dropdown-item media bg-flat-color-4" href="#">
-                  <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                  <span class="photo media-left"><img alt="avatar" src="{{ asset('/sufee/images/avatar/2.jpg') }}"></span>
                   <span class="message media-body">
                     <span class="name float-left">Jack Sanders</span>
                     <span class="time float-right">5 minutes ago</span>
@@ -192,7 +192,7 @@
                   </span>
                 </a>
                 <a class="dropdown-item media bg-flat-color-5" href="#">
-                  <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                  <span class="photo media-left"><img alt="avatar" src="{{ asset('/sufee/images/avatar/3.jpg') }}"></span>
                   <span class="message media-body">
                     <span class="name float-left">Cheryl Wheeler</span>
                     <span class="time float-right">10 minutes ago</span>
@@ -200,7 +200,7 @@
                   </span>
                 </a>
                 <a class="dropdown-item media bg-flat-color-3" href="#">
-                  <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                  <span class="photo media-left"><img alt="avatar" src="{{ asset('/sufee/images/avatar/4.jpg') }}"></span>
                   <span class="message media-body">
                     <span class="name float-left">Rachel Santos</span>
                     <span class="time float-right">15 minutes ago</span>
@@ -215,7 +215,7 @@
         <div class="col-sm-5">
           <div class="user-area dropdown float-right">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+              <img class="user-avatar rounded-circle" src="{{ asset('/sufee/images/admin.jpg') }}" alt="User Avatar">
             </a>
 
             <div class="user-menu dropdown-menu">
@@ -565,7 +565,7 @@
 
             <div class="media">
               <a href="#">
-                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/admin.jpg">
+                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="{{ asset('/sufee/images/admin.jpg') }}">
               </a>
               <div class="media-body">
                 <h2 class="text-white display-6">Jim Doe</h2>
@@ -665,18 +665,18 @@
 
   <!-- Right Panel -->
 
-  <script src="vendors/jquery/dist/jquery.min.js"></script>
-  <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
-  <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('/sufee/vendors/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('/sufee/vendors/popper.js/dist/umd/popper.min.js') }}"></script>
+  <script src="{{ asset('/sufee/vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('/sufee/assets/js/main.js') }}"></script>
 
 
-  <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
-  <script src="assets/js/dashboard.js"></script>
-  <script src="assets/js/widgets.js"></script>
-  <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
-  <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-  <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="{{ asset('/sufee/vendors/chart.js/dist/Chart.bundle.min.js') }}"></script>
+  <script src="{{ asset('/sufee/assets/js/dashboard.js') }}"></script>
+  <script src="{{ asset('/sufee/assets/js/widgets.js') }}"></script>
+  <script src="{{ asset('/sufee/vendors/jqvmap/dist/jquery.vmap.min.js') }}"></script>
+  <script src="{{ asset('/sufee/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js') }}"></script>
+  <script src="{{ asset('/sufee/vendors/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
   <script>
     (function($) {
       "use strict";
